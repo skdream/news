@@ -10,14 +10,14 @@ name: wxPush
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # 每5分钟一次，测试用
+    - cron: '*/5 * * * *' # 每5分钟一次，测试用
 
 jobs:
   bot:
     runs-on: ubuntu-latest # 运行环境为最新版的Ubuntu
     steps:
       - name: 'Checkout codes' # 步骤一，获取仓库代码
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
        # 使用 node:10
       - name: Setup node
         uses: actions/setup-node@v1
@@ -25,9 +25,7 @@ jobs:
           node-version: '12'
       # 拉取远程仓库代码
       - name: git pull origin
-        run: |
-          git remote add github git@github.com:fe-cool/news.git
-          git pull github main
+        run: git pull  git@github.com:fe-cool/news.git main
 
         # npm install
       - name: npm install
