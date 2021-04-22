@@ -2,3 +2,7 @@
 book/
 draft/
 src/feed.xml
+node_modules
+wxPush.js
+wxPush.sh
+.github

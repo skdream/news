@@ -1,0 +1,22 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "description": "[![github pages](https://github.com/fe-cool/news/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/fe-cool/news/actions/workflows/deploy.yml)\r [![gitee](https://img.shields.io/badge/Gitee-fe--cool/news-000?logo=gitee)](https://fe-cool.gitee.io/news)\r [![rss](https://img.shields.io/badge/RSS-fe--cool/news-000?logo=rss)](https://fe-cool.github.io/news/feed.xml)",
+  "main": "wxPush.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skdream/news.git"
+  },
+  "author": "jsir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skdream/news/issues"
+  },
+  "homepage": "https://github.com/skdream/news#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
