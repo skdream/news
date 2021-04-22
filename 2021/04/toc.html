@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2021.04 - MDH • 前端情报</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        
+        <link rel="shortcut icon" href="../../favicon.png">
+        
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../../theme/news.css">
+        
+
+        
+        <style>img { border-radius: 4px; max-width: 100%; }</style>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> MDH</a></li><li class="chapter-item expanded "><a href="../../2021/04/toc.html" class="active"><strong aria-hidden="true">2.</strong> 2021.04</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../2021/04/14.html"><strong aria-hidden="true">2.1.</strong> 2021.04.14</a></li><li class="chapter-item expanded "><a href="../../2021/04/15.html"><strong aria-hidden="true">2.2.</strong> 2021.04.15</a></li><li class="chapter-item expanded "><a href="../../2021/04/16.html"><strong aria-hidden="true">2.3.</strong> 2021.04.16</a></li><li class="chapter-item expanded "><a href="../../2021/04/17.html"><strong aria-hidden="true">2.4.</strong> 2021.04.17</a></li><li class="chapter-item expanded "><a href="../../2021/04/18.html"><strong aria-hidden="true">2.5.</strong> 2021.04.18</a></li><li class="chapter-item expanded "><a href="../../2021/04/19.html"><strong aria-hidden="true">2.6.</strong> 2021.04.19</a></li><li class="chapter-item expanded "><a href="../../2021/04/20.html"><strong aria-hidden="true">2.7.</strong> 2021.04.20</a></li><li class="chapter-item expanded "><a href="../../2021/04/21.html"><strong aria-hidden="true">2.8.</strong> 2021.04.21</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">MDH • 前端情报</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="../../feed.xml" title="RSS" aria-label="RSS">
+                            <i id="rss-button" class="fa fa-rss-square"></i>
+                        </a>
+                        
+                        <a href="https://github.com/fe-cool/news" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main style="min-height: 42vh">
+                        <h1 id="202104"><a class="header" href="#202104">2021.04</a></h1>
+<p><code>汇总中...</code></p>
+<!-- 16已完成 -->
+<h2 id="tools"><a class="header" href="#tools">Tools</a></h2>
+<ul>
+<li><a href="https://bundlers.tooling.report">tooling.report</a> - 为您的下一个Web项目确定最佳构建工具的快速方法，或者是否值得进行工具迁移，或者如何在现有配置和代码库中采用工具的最佳实践。</li>
+<li><a href="https://github.com/docmirror/dev-sidecar">docmirror/dev-sidecar</a> - 开发者边车，github打不开，github加速，git clone加速，git release下载加速，stackoverflow加速</li>
+<li><a href="https://natto.dev">natto.dev | interactive JavaScript space</a></li>
+<li><a href="https://github.com/nrwl/nx">Powerful, Extensible Dev Tools</a></li>
+<li><a href="https://github.com/hiroppy/fusuma">Fusuma</a> - 使用Markdown轻松制作幻灯片。</li>
+<li><a href="https://rive.app">rive</a> - 基于 Flutter 开发的网页端动画制作工具(站点支持 PWA) 提供 Web(基于 wasm)、Flutter、Cpp、iOS、Android 五种运行时。</li>
+</ul>
+<p><code>docs</code></p>
+<ul>
+<li><a href="https://github.com/rust-lang/mdBook">Create book from markdown files. Like Gitbook but implemented in Rust</a></li>
+</ul>
+<p><code>dev</code></p>
+<ul>
+<li><a href="https://css-tricks.com/comparing-the-new-generation-of-build-tools">Comparing the New Generation of Build Tools - esbuild snpwpack vite wmr</a></li>
+</ul>
+<h2 id="news"><a class="header" href="#news">News</a></h2>
+<ul>
+<li><a href="https://github.com/jondot/awesome-weekly">jondot/awesome-weekly</a> - 来自软件界的优质每周精选新闻通讯的精选列表</li>
+<li><a href="https://github.com/zudochkin/awesome-newsletters">zudochkin/awesome-newsletters</a> - 精选的精选新闻通讯清单</li>
+<li><a href="https://github.com/zenany/weekly">zenany/weekly</a> - 汇总平时看到的好文章，前端技术 &amp; 产品研发为主...</li>
+<li><a href="https://docschina.org/weekly/react/docs">印记中文 - React Status Weekly</a></li>
+</ul>
+<h2 id="vs-code"><a class="header" href="#vs-code">VS Code</a></h2>
+<p><code>theme</code></p>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme&amp;WT.mc_id=devcloud-00000-cxa">Github Theme</a></li>
+</ul>
+<h2 id="fe"><a class="header" href="#fe">FE</a></h2>
+<p><code>js</code></p>
+<ul>
+<li><a href="https://www.toutiao.com/i6950609447534412327">我国首个 JS 语言提案在 ECMA 进入 Stage 3</a></li>
+<li><a href="https://mp.weixin.qq.com/s/wh1RcA1-32rLI4xRaKi-uw">ES2021/ES12 令人期待的新特性</a></li>
+<li><a href="https://github.com/GoogleChromeLabs/houdini-samples">Demos for different Houdini APIs</a></li>
+</ul>
+<p><code>react</code></p>
+<ul>
+<li><a href="https://juejin.cn/post/6950997088947666951">Recoil</a> - Facebook 新一代的 React 状态管理库</li>
+<li><a href="https://remote.reactsummit.com">React Summit</a> – The Biggest React Conference Online</li>
+<li><a href="https://github.com/pansyjs/react-amap">pansyjs/react-amap</a> - 基于 React 封装的高德地图组件，助你轻松的接入高德地图到 React 项目中。</li>
+<li>可以用 React 做视频的 <a href="https://www.remotion.dev/blog/2-0/">remotion 发布 2.0</a>，支持音频，使用 esbuild-loader 代替 babel-loader，&lt;Gif&gt; 组件等</li>
+</ul>
+<p><code>vue</code></p>
+<ul>
+<li><a href="https://us.vuejs.org">Official Vue.js Conference USA</a></li>
+<li><a href="https://docs.google.com/presentation/d/1Lu1X6dyofyWqE6lpWsdUAkHMWm9pB6A9bs187iIUin4/edit#slide=id.p">Evan You - VueConf US 2021</a></li>
+<li>vue-cli维护者蒋豪群，给大家讲<a href="https://b23.tv/7IaUec">如何学习新的技术（以vue3个vite为例）</a></li>
+</ul>
+<p><code>webpack</code></p>
+<ul>
+<li><a href="https://github.com/webpack/webpack/releases/tag/v5.33.0">webpack 5.33</a>，支持针对不同 entry 配置不同的 publicPath</li>
+<li><a href="https://github.com/webpack/webpack/blob/master/lib/DynamicEntryPlugin.js">webpack源码</a> - 发现entry的隐藏技能，支持entry 是一个 promise</li>
+<li><a href="https://twitter.com/_developit/status/1382838799420514317">SVG Import as React Component 的方式并不好</a>，因为 bundle 到一起，没有用到的也会加载，所以会影响加载性能和内存占用，那么推荐的方式是啥？import 后返回一个 url 可能比较合适，比如用 webpack 的 url-loader</li>
+</ul>
+<p><code>esbuild</code></p>
+<ul>
+<li><a href="https://github.com/egoist/esmon">esmon</a> - 类似 nodemon 但基于 esbuild，支持 ts 等</li>
+</ul>
+<p><code>babel</code></p>
+<ul>
+<li>Babel 新增 <a href="https://babeljs.io/docs/en/features-timeline">Feature Timeline</a>，把之前 changelog 里的重要功能摘了出来，一目了然</li>
+</ul>
+<h3 id="css"><a class="header" href="#css">CSS</a></h3>
+<ul>
+<li><a href="https://headlessui.dev">Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.</a></li>
+</ul>
+<p><code>PWA</code></p>
+<ul>
+<li><a href="https://link.medium.com/S91NRcCGsfb">Your PWA is going to break in August 2021</a></li>
+</ul>
+<p><code>deno</code></p>
+<ul>
+<li>deno 1.9 支持 import completions in the lsp 如果未来是 bundless，这和 remote dts 应该都会成为 esm cdn 的基础设施
+<ul>
+<li><a href="https://deno.com/blog/v1.9">Deno 1.9 Release Notes</a></li>
+<li><a href="https://deno.com/blog/v1.9#import-completions-in-the-lsp">Import completions in the LSP</a></li>
+<li><a href="https://docs.skypack.dev/skypack-cdn/code/deno#hello-deno">skypack-cdn - Hello, Deno!</a></li>
+<li><a href="https://github.com/denoland/vscode_deno/blob/main/docs/ImportCompletions.md">vscode_deno - Import Completions</a></li>
+</ul>
+</li>
+</ul>
+<p><code>FE-Other</code></p>
+<ul>
+<li>BarcodeDetector 结合 navigator.getUserMedia（摄像头） 可用于识别二维码
+<ul>
+<li><a href="https://twitter.com/stackblitz/status/1382337979767742464">With <code>BarcodeDetector</code> you decode linear and two-dimensional (e.g. QR Code) codes directly in a browser!</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/BarcodeDetector">Web API - BarcodeDetector</a></li>
+<li><a href="https://barcode-detector.stackblitz.io">Web Site</a></li>
+</ul>
+</li>
+<li>Chrome Features
+<ul>
+<li><a href="https://www.chromestatus.com/features/4609574738853888">ES Modules for service workers ('module' type option)</a>:</li>
+<li><a href="https://docs.google.com/document/d/1SeQ085YdBTtW3D_ygSpO0Wz2DAe8QiS1gj37IG5lstg/edit#">ES Modules for Service Workers</a></li>
+<li><a href="https://developer.chrome.com/blog/new-in-chrome-90"><code>blog</code> New Chrome 90</a></li>
+<li><a href="https://www.youtube.com/watch?v=h3MONldIoNM"><code>youtube</code> New in Chrome 90</a>: Overflow Clip, Permissions Policy, the Declarative Shadow DOM, and more!</li>
+<li><a href="https://web.dev/declarative-shadow-dom">Declarative Shadow DOM</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/sindresorhus/p-limit">Run multiple promise-returning &amp; async functions with limited concurrency</a></li>
+<li><a href="https://dev.to/dabit3/the-complete-guide-to-full-stack-ethereum-development-3j13">The Complete Guide to Full Stack Ethereum Development</a></li>
+</ul>
+<h2 id="wasm"><a class="header" href="#wasm">Wasm</a></h2>
+<ul>
+<li><a href="https://lencx.github.io/book/wasm/rust_wasm_frontend.html">WebAssembly入门 （Vite + Rust）</a></li>
+</ul>
+<h2 id="rust"><a class="header" href="#rust">Rust</a></h2>
+<ul>
+<li><a href="https://github.com/netwarps/libp2p-rs">libp2p-rs</a> - rust实现的libp2p</li>
+<li><a href="https://github.com/rbatis/rbatis">rbatis</a> - 用rust实现ORM框架</li>
+<li><a href="https://github.com/hecrj/iced">iced</a> - rust 9.2K 跨平台 GUI 仓库</li>
+<li><a href="https://github.com/swc-project/swc">swc</a> - rust编写的超快速的typescript/ javascript编译器</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../2021/04/14.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+
+                    <div style="margin: 50px auto 0; max-width: 780px;">
+                        <script src="https://utteranc.es/client.js"
+                        repo="fe-cool/news-comments"
+                        issue-term="url"
+                        theme="github-dark-orange"
+                        crossorigin="anonymous"
+                        async></script>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../../2021/04/14.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_line_numbers = true;
+        </script>
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+        <script src="../../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+        <script>var _hmt=_hmt||[];(function(){var b=document.createElement("script");b.src="https://hm.baidu.com/hm.js?9fe2aa5611d2a4207aee3952e72090bc";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)})();</script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+    </body>
+</html>
