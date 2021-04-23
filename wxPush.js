@@ -95,6 +95,7 @@ async function fire() {
   
 
   var dateStr = formatTime(date - 24 * 60 * 60 * 1000, "yyyy/MM/dd");
+  console.log(dateStr)
   var mdData = await readFile(path.join(__dirname, "src/", dateStr + ".md"));
 
   mdData = mdData.split("---")[0];
