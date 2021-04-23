@@ -18,7 +18,7 @@ async function readFile(filepath) {
 async function pushMsg(msg) {
   return axios
     .post(
-        `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1e864af4-2e69-446b-8135-308ffc777b37`,
+        `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=${process.env.SKEY}`,
     //   "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=2f6d8b12-e5cb-4e99-b020-e7e1ae0958b7",
       {
         msgtype: "markdown",
@@ -110,7 +110,7 @@ async function fire() {
 
 
   let temArr = [];
-  while (mdData.length > 10 && temArr.length < 2) {
+  while (mdData.length > 10 && temArr.length < 10) {
     temArr.push(mdData.splice(0, 9));
   }
 
@@ -121,7 +121,7 @@ async function fire() {
     msg = msg.replace(/^# .*/, "# 前端早报-" + formatTime(date, "yyyy.MM.dd"));
     console.log(msg);
     console.log("--------");
-    // await pushMsg(msg);
+    await pushMsg(msg);
     await sleep(1000 * 60);
   }
 }
