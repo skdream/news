@@ -45,6 +45,6 @@ jobs:
         run: |
           cd ~/workspace
           npm install
-          node wxPush.js
+          node ~/workspace/wxPush.js
         env:	#添加环境变量
           SKEY: ${{ secrets.SKEY }}
