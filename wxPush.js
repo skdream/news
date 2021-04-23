@@ -14,7 +14,7 @@ async function readFile(filepath) {
     });
   });
 }
-//https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=2f6d8b12-e5cb-4e99-b020-e7e1ae0958b7
+
 async function pushMsg(msg) {
   return axios
     .post(
@@ -103,7 +103,7 @@ async function fire() {
     await sleep(1000 * 60);
   }
 
-  //   pushMsg(mdData);
+    pushMsg(mdData);
 }
 
 fire();
