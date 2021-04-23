@@ -18,29 +18,29 @@ jobs:
   bot:
     runs-on: ubuntu-latest # 运行环境为最新版的Ubuntu
     steps:
-      - name: 'Checkout codes' # 步骤一，获取仓库代码
-        uses: actions/checkout@v2
-       # 使用 node:10
+      # 拉取远程仓库代码
+      - name: git clone origin
+        run: |
+          git config --global user.email "skdream@126.com"
+          git config --global user.name "skdream"
+          git clone -b master  https://github.com/fe-cool/news.git ~/news
+      # 使用 node:10
       - name: Setup node
         uses: actions/setup-node@v1
         with:
           node-version: '12'
-      # 拉取远程仓库代码
-      - name: git pull origin
-        run: |
-          git config pull.rebase false
-          git config --global user.email "skdream@126.com"
-          git config --global user.name "skdream"
-          git pull  https://github.com/fe-cool/news.git main --allow-unrelated-histories
-
-          # git rebase --continue
-
-        # npm install
-      - name: npm install
-        run: npm install
+      - name: Cache node_modules
+        uses: actions/cache@v2 # 使用 GitHub 官方的缓存 Action。
         env:
-          CI: true
-      - name: 'Run wxPush' # 步骤二，执行sh命令文件
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
+      # npm install
+      - name: 'Run wxPush'
+        run: |
+          cd ~/news
+          npm install
+          node wxPush.js
         env:	#添加环境变量
           SKEY: ${{ secrets.SKEY }}
-        run: node ./wxPush.js # 运行目录是仓库根目录
