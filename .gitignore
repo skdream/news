@@ -4,3 +4,4 @@ draft/
 src/feed.xml
 node_modules
 wxPush.sh
+.github/deploy.yml
