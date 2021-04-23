@@ -29,6 +29,8 @@ jobs:
       - name: git pull origin
         run: |
           git config pull.rebase false
+          git config --global user.email "skdream@126.com"
+          git config --global user.name "skdream"
           git pull  https://github.com/fe-cool/news.git main --allow-unrelated-histories
           git rm .gitignore
           # git rebase --continue
