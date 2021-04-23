@@ -105,6 +105,7 @@ async function fire() {
 
   mdData = mdData.replace(/\r/g,'\n')
   mdData = mdData.replace(/\n/ig,'\n')
+  console.log(mdData)
   mdData = mdData.split("\n\n\n");
 
 
@@ -113,18 +114,16 @@ async function fire() {
     temArr.push(mdData.splice(0, 9));
   }
 
-//   console.log(temArr);
+  console.log(temArr);
 
   for (const data of temArr) {
     let msg = data.join("\r\n");
     msg = msg.replace(/^# .*/, "# 前端早报-" + formatTime(date, "yyyy.MM.dd"));
     console.log(msg);
     console.log("--------");
-    await pushMsg(msg);
+    // await pushMsg(msg);
     await sleep(1000 * 60);
   }
-
-    pushMsg(mdData);
 }
 
 fire();
