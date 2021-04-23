@@ -23,7 +23,7 @@ jobs:
         run: |
           git config --global user.email "skdream@126.com"
           git config --global user.name "skdream"
-          git clone -b master  https://github.com/fe-cool/news.git ~/news
+          git clone -b main  https://github.com/fe-cool/news.git ~/news
       # 使用 node:10
       - name: Setup node
         uses: actions/setup-node@v1
