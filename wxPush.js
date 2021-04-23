@@ -98,29 +98,29 @@ async function fire() {
   console.log(dateStr)
   console.log(path.join(__dirname, "src/", dateStr + ".md"))
   var mdData = await readFile(path.join(__dirname, "src/", dateStr + ".md"));
-  console.log(mdData)
+
 
   mdData = mdData.split("---")[0];
 
-  console.log(mdData,1)
 
+  mdData = mdData.replace(/\r/g,'\n')
+  mdData = mdData.replace(/\n/ig,'\n')
+  mdData = mdData.split("\n\n\n");
 
-  mdData = mdData.split("\r\n\r\n");
-  console.log(mdData,2)
 
   let temArr = [];
   while (mdData.length > 10 && temArr.length < 2) {
     temArr.push(mdData.splice(0, 9));
   }
 
-  console.log(temArr);
+//   console.log(temArr);
 
   for (const data of temArr) {
     let msg = data.join("\r\n");
     msg = msg.replace(/^# .*/, "# 前端早报-" + formatTime(date, "yyyy.MM.dd"));
     console.log(msg);
     console.log("--------");
-    // await pushMsg(msg);
+    await pushMsg(msg);
     await sleep(1000 * 60);
   }
 
