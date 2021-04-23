@@ -98,12 +98,15 @@ async function fire() {
   console.log(dateStr)
   console.log(path.join(__dirname, "src/", dateStr + ".md"))
   var mdData = await readFile(path.join(__dirname, "src/", dateStr + ".md"));
+  console.log(mdData)
 
   mdData = mdData.split("---")[0];
 
+  console.log(mdData,1)
 
 
   mdData = mdData.split("\r\n\r\n");
+  console.log(mdData,2)
 
   let temArr = [];
   while (mdData.length > 10 && temArr.length < 2) {
