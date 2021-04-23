@@ -18,7 +18,7 @@ async function readFile(filepath) {
 async function pushMsg(msg) {
   return axios
     .post(
-        `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=${process.env.SKEY}`,
+        `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1e864af4-2e69-446b-8135-308ffc777b37`,
     //   "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=2f6d8b12-e5cb-4e99-b020-e7e1ae0958b7",
       {
         msgtype: "markdown",
