@@ -35,6 +35,18 @@ async function pushMsg(msg) {
     });
 }
 
+
+function getTimeByTimeZone(timeZone){
+    var d=new Date();
+        localTime = d.getTime(),
+        localOffset=d.getTimezoneOffset()*60000, //获得当地时间偏移的毫秒数,这里可能是负数
+        utc = localTime + localOffset, //utc即GMT时间
+        offset = timeZone, //时区，北京市+8  美国华盛顿为 -5
+        localSecondTime = utc + (3600000*offset);  //本地对应的毫秒数
+    var date = new Date(localSecondTime);
+    return date
+}
+
 /**
  * @param  {} secs 时间戳
  * @param  {} format 转换的格式 yyyy-MM-dd hh:mm:ss
@@ -79,7 +91,9 @@ async function sleep(seconds) {
 }
 
 async function fire() {
-  var date = new Date();
+  var date = getTimeByTimeZone(8);
+  
+
   var dateStr = formatTime(date - 24 * 60 * 60 * 1000, "yyyy/MM/dd");
   var mdData = await readFile(path.join(__dirname, "src/", dateStr + ".md"));
 
