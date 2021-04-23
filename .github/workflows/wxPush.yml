@@ -33,8 +33,9 @@ jobs:
           git config --global user.email "skdream@126.com"
           git config --global user.name "skdream"
           git pull  https://github.com/fe-cool/news.git main --allow-unrelated-histories
-  
-          # git rebase --continue
+          git add .
+          git commit -m 'fix: gitignore'
+          git rebase --continue
 
         # npm install
       - name: npm install
