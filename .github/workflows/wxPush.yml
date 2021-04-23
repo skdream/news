@@ -30,6 +30,8 @@ jobs:
         run: |
           git config pull.rebase true
           git pull  https://github.com/fe-cool/news.git main --allow-unrelated-histories
+          git add .
+          git rebase --continue
           git rebase --skip
 
         # npm install
