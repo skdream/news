@@ -35,7 +35,7 @@ jobs:
           git pull  https://github.com/fe-cool/news.git main --allow-unrelated-histories
           git add .
           git commit -m 'fix: gitignore'
-          git rebase --continue
+          # git rebase --continue
 
         # npm install
       - name: npm install
