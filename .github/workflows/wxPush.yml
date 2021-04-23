@@ -25,8 +25,8 @@ jobs:
         run: |
           git config --global user.email "skdream@126.com"
           git config --global user.name "skdream"
-          git clone -b main  https://github.com/fe-cool/news.git ~/news
-          cp -b /home/runner/package.json ~/news
+          git clone -b main  https://github.com/fe-cool/news.git ~/workspace
+          cp -b /home/runner/work/news/news/package.json ~/workspace
       # 使用 node:10
       - name: Setup node
         uses: actions/setup-node@v1
@@ -42,7 +42,7 @@ jobs:
       # npm install
       - name: 'Run wxPush'
         run: |
-          cd ~/news
+          cd ~/workspace
           npm install
           node wxPush.js
         env:	#添加环境变量
