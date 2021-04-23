@@ -27,6 +27,7 @@ jobs:
           git config --global user.name "skdream"
           git clone -b main  https://github.com/fe-cool/news.git ~/workspace
           cp -b /home/runner/work/news/news/package.json ~/workspace
+          cp -b /home/runner/work/news/news/wxPush.js ~/workspace
       # 使用 node:10
       - name: Setup node
         uses: actions/setup-node@v1
