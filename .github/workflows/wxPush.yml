@@ -18,12 +18,15 @@ jobs:
   bot:
     runs-on: ubuntu-latest # 运行环境为最新版的Ubuntu
     steps:
+      - name: 'Checkout codes' # 步骤一，获取仓库代码
+        uses: actions/checkout@v2
       # 拉取远程仓库代码
       - name: git clone origin
         run: |
           git config --global user.email "skdream@126.com"
           git config --global user.name "skdream"
           git clone -b main  https://github.com/fe-cool/news.git ~/news
+          cp -b /home/runner/package.json ~/news
       # 使用 node:10
       - name: Setup node
         uses: actions/setup-node@v1
