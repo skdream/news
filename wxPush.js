@@ -106,7 +106,7 @@ async function fire() {
   mdData = mdData.replace(/\r/g,'\n')
   mdData = mdData.replace(/\n/ig,'\n')
   console.log(mdData)
-  mdData = mdData.split("\n\n\n");
+  mdData = mdData.split("\n");
 
 
   let temArr = [];
