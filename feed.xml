@@ -9,7 +9,7 @@
     <title><![CDATA[关于【MDH • 前端情报】]]></title>
     <link>https://fe-cool.github.io/news/index.html</link>
     <guid isPermaLink="false">https://fe-cool.github.io/news/index.html</guid>
-    <pubDate>Fri, 23 Apr 2021 11:12:06 +0800</pubDate>
+    <pubDate>Fri, 23 Apr 2021 14:13:19 +0800</pubDate>
     <description><![CDATA[<h1 id="关于mdh-前端情报">关于【MDH • 前端情报】</h1>
 <ul>
 <li>代号：<code>MDH(make developer happier)</code></li>
@@ -73,7 +73,7 @@
     <title><![CDATA[精选]]></title>
     <link>https://fe-cool.github.io/news/awesome/toc.html</link>
     <guid isPermaLink="false">https://fe-cool.github.io/news/awesome/toc.html</guid>
-    <pubDate>Fri, 23 Apr 2021 11:12:06 +0800</pubDate>
+    <pubDate>Fri, 23 Apr 2021 14:13:19 +0800</pubDate>
     <description><![CDATA[<h1 id="精选">精选</h1>
 <h2 id="tools">Tools</h2>]]></description>
   </item>
@@ -82,7 +82,7 @@
     <title><![CDATA[Summary]]></title>
     <link>https://fe-cool.github.io/news/SUMMARY.html</link>
     <guid isPermaLink="false">https://fe-cool.github.io/news/SUMMARY.html</guid>
-    <pubDate>Fri, 23 Apr 2021 11:12:06 +0800</pubDate>
+    <pubDate>Fri, 23 Apr 2021 14:13:19 +0800</pubDate>
     <description><![CDATA[<h1 id="summary">Summary</h1> <ul> <li><a href="./index.html">MDH</a></li> </ul> <!-- LICENSE README.html book.toml contributors.html getting-started.html package-lock.json package.json rss.sh src theme wxPush.js [Awesome](./awesome/toc.html) --> <!-- LICENSE README.html book.toml contributors.html getting-started.html package-lock.json package.json rss.sh src theme wxPush.js [2021年](./2021.html) --> <ul> <li><a href="2021/04/toc.html">2021.04</a></li> <li><a href="./2021/04/14.html">2021.04.14</a></li> <li><a href="./2021/04/15.html">2021.04.15</a></li> <li><a href="./2021/04/16.html">2021.04.16</a></li> <li><a href="./2021/04/17.html">2021.04.17</a></li> <li><a href="./2021/04/18.html">2021.04.18</a></li> <li><a href="./2021/04/19.html">2021.04.19</a></li> <li><a href="./2021/04/20.html">2021.04.20</a></li> <li><a href="./2021/04/21.html">2021.04.21</a></li> <li><a href="./2021/04/22.html">2021.04.22</a></li> </ul>]]></description>
   </item>
    
@@ -90,7 +90,7 @@
     <title><![CDATA[2021.04]]></title>
     <link>https://fe-cool.github.io/news/2021/04/toc.html</link>
     <guid isPermaLink="false">https://fe-cool.github.io/news/2021/04/toc.html</guid>
-    <pubDate>Fri, 23 Apr 2021 11:12:06 +0800</pubDate>
+    <pubDate>Fri, 23 Apr 2021 14:13:19 +0800</pubDate>
     <description><![CDATA[<h1 id="section">2021.04</h1>
 <p><code>汇总中...</code> <!-- 16已完成 --></p>
 <h2 id="tools">Tools</h2>
@@ -204,7 +204,7 @@
     <title><![CDATA[2021.04.22]]></title>
     <link>https://fe-cool.github.io/news/2021/04/22.html</link>
     <guid isPermaLink="false">https://fe-cool.github.io/news/2021/04/22.html</guid>
-    <pubDate>Fri, 23 Apr 2021 11:12:06 +0800</pubDate>
+    <pubDate>Fri, 23 Apr 2021 14:13:19 +0800</pubDate>
     <description><![CDATA[<h1 id="section">2021.04.22</h1>
 <ul>
 <li><p><code>tools</code> <code>chrome</code> <a href="https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg">Wappalyzer</a> - 100 w+ 下载量，可以查看网站的技术栈以及使用的相关工具和服务。</p></li>
@@ -286,7 +286,7 @@
     <title><![CDATA[2021.04.21]]></title>
     <link>https://fe-cool.github.io/news/2021/04/21.html</link>
     <guid isPermaLink="false">https://fe-cool.github.io/news/2021/04/21.html</guid>
-    <pubDate>Fri, 23 Apr 2021 11:12:06 +0800</pubDate>
+    <pubDate>Fri, 23 Apr 2021 14:13:19 +0800</pubDate>
     <description><![CDATA[<h1 id="section">2021.04.21</h1>
 <ul>
 <li><p><code>fe</code> <code>guide</code> <a href="https://javascript.info">现代JavaScript教程</a></p></li>
@@ -406,7 +406,7 @@
     <title><![CDATA[2021.04.20]]></title>
     <link>https://fe-cool.github.io/news/2021/04/20.html</link>
     <guid isPermaLink="false">https://fe-cool.github.io/news/2021/04/20.html</guid>
-    <pubDate>Fri, 23 Apr 2021 11:12:06 +0800</pubDate>
+    <pubDate>Fri, 23 Apr 2021 14:13:19 +0800</pubDate>
     <description><![CDATA[<h1 id="section">2021.04.20</h1>
 <ul>
 <li><p><code>vsc</code> <code>app</code> 作者推荐<a href="https://dev.to/simonpaix/10-useful-vs-code-shortcuts-you-should-know-42m">十个有用的vscode快捷键</a>，可以用来提高效率，但是常用快捷键还有很多，附上<a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">windows</a>和<a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf">mac</a>快捷键表，配合快捷键提示<a href="https://www.mediaatelier.com/CheatSheet">CheatSheet APP(mac)</a>效果更佳。</p></li>
@@ -440,7 +440,7 @@
     <title><![CDATA[2021.04.19]]></title>
     <link>https://fe-cool.github.io/news/2021/04/19.html</link>
     <guid isPermaLink="false">https://fe-cool.github.io/news/2021/04/19.html</guid>
-    <pubDate>Fri, 23 Apr 2021 11:12:06 +0800</pubDate>
+    <pubDate>Fri, 23 Apr 2021 14:13:19 +0800</pubDate>
     <description><![CDATA[<h1 id="section">2021.04.19</h1>
 <ul>
 <li><p><code>react</code> <a href="https://github.com/sudheerj/reactjs-interview-questions">329 道 react 面试题</a>，质量还挺高</p></li>
@@ -471,7 +471,7 @@
     <title><![CDATA[2021.04.18]]></title>
     <link>https://fe-cool.github.io/news/2021/04/18.html</link>
     <guid isPermaLink="false">https://fe-cool.github.io/news/2021/04/18.html</guid>
-    <pubDate>Fri, 23 Apr 2021 11:12:06 +0800</pubDate>
+    <pubDate>Fri, 23 Apr 2021 14:13:19 +0800</pubDate>
     <description><![CDATA[<h1 id="section">2021.04.18</h1>
 <ul>
 <li><code>chrome</code> Google的.new快捷方式，Google为Google文档、幻灯片和表格引入了方便的“ .new”快捷方式，网站运营方也可以注册自己在线快捷方式的.new域，例如：</li>
@@ -494,7 +494,7 @@
     <title><![CDATA[2021.04.17]]></title>
     <link>https://fe-cool.github.io/news/2021/04/17.html</link>
     <guid isPermaLink="false">https://fe-cool.github.io/news/2021/04/17.html</guid>
-    <pubDate>Fri, 23 Apr 2021 11:12:06 +0800</pubDate>
+    <pubDate>Fri, 23 Apr 2021 14:13:19 +0800</pubDate>
     <description><![CDATA[<h1 id="section">2021.04.17</h1>
 <ul>
 <li><code>node</code> node 10 还有十几天就结束维护了，新开工具可以考虑默认 esm</li>
