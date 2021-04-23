@@ -27,7 +27,7 @@ jobs:
       - name: git pull origin
         run: |
           git config pull.ff only
-          git pull  https://github.com/fe-cool/news.git main
+          git pull  https://github.com/fe-cool/news.git main  --allow-unrelated-histories
 
         # npm install
       - name: npm install
