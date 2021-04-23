@@ -96,9 +96,12 @@ async function fire() {
 
   var dateStr = formatTime(date - 24 * 60 * 60 * 1000, "yyyy/MM/dd");
   console.log(dateStr)
+  console.log(path.join(__dirname, "src/", dateStr + ".md"))
   var mdData = await readFile(path.join(__dirname, "src/", dateStr + ".md"));
 
   mdData = mdData.split("---")[0];
+
+
 
   mdData = mdData.split("\r\n\r\n");
 
@@ -114,7 +117,7 @@ async function fire() {
     msg = msg.replace(/^# .*/, "# 前端早报-" + formatTime(date, "yyyy.MM.dd"));
     console.log(msg);
     console.log("--------");
-    await pushMsg(msg);
+    // await pushMsg(msg);
     await sleep(1000 * 60);
   }
 
