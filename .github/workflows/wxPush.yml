@@ -5,6 +5,8 @@ name: wxPush
 # 两种触发方式：一、push代码，二、每天国际标准时间23点（北京时间+8即早上7点）运行
 on:
   push:
+    branches:
+      - main
   schedule:
     - cron: '0 23 * * *' # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#scheduled-events-schedule
 
@@ -27,7 +29,7 @@ jobs:
       - name: git pull origin
         run: |
           git config pull.ff only
-          git pull  https://github.com/fe-cool/news.git main  --allow-unrelated-histories
+          git pull  https://github.com/fe-cool/news.git main --allow-unrelated-histories
 
         # npm install
       - name: npm install
